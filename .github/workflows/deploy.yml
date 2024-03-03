@@ -15,6 +15,7 @@ jobs:
       - name: Publish
         uses: cloudflare/wrangler-action@v3.3.1
         with:
+          environment: preview
           apiToken: ${{ secrets.CF_API_TOKEN }}
           secrets: |
             CUSTOM_HEADER
